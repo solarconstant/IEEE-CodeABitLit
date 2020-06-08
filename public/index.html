@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-it</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "styles.css">
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Shop-it</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Groceries</a>
+                <a class="dropdown-item" href="#">Medicine</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Everything Else</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <form class="form-inline my-2 my-lg-0"></form>
+            <button class="btn btn-outline-primary mr-sm-2 fa fa-sign-in" id="Login">
+                <a data-toggle="modal" data-target="#loginModal">Login</a>
+            </button>
+          </form>
+        </div>
+        
+      </nav>
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter Email">
+                        </div> 
+                        <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputPassword3">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Remember me</label>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary btm-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="Groceries">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Grocery Shops</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3">
+                        <img src="https://www.besthealthfoodshop.com/wp-content/uploads/2017/01/shopfront_1c.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#bhfs"><h5 class="card-title">Best Health and Food Shop</h5></button>
+                        </div>
+                      </div>
+                      <div class="card mb-3">
+                        <img src="https://c8.alamy.com/comp/B3Y7GX/a-typical-english-village-shop-at-great-bedwyn-wiltshire-england-uk-B3Y7GX.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#ts"><h5 class="card-title">THE STORES</h5></button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="Medicines">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Medicine Shops</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROwyZdpitTbIOJYwa8nsDC2auN0SBZsXGHTUEUg0PWaaU07B27&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#cm"><h5 class="card-title">Chinese Medicine</h5></button>
+                        </div>
+                      </div>
+                      <div class="card mb-3">
+                        <img src="https://i.pinimg.com/originals/68/74/43/687443e224a055af22caffe464296d08.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#cp"><h5 class="card-title">city pharmacy</h5></button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="Misc">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Shops</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3">
+                        <img src="https://media.glassdoor.com/l/43/02/27/63/salon-front.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#hb"><h5 class="card-title">Hair Bar</h5></button>
+                        </div>
+                      </div>
+                      <div class="card mb-3">
+                        <img src="https://pasqualepersonalbrief.files.wordpress.com/2014/12/reload_shop_front_nov_2013_small.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#r"><h5 class="card-title">RELOAD</h5></button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="bhfs">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Item list</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm"> 
+                        
+                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Rice
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Wheat
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Oil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pulses
+                              </label>
+                            </div>
+                            
+                            
+                            
+                                
+                            </div>
+                            <form>
+                              <input type = "text" placeholder="Enter your desired items here">
+                            </form> 
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="ts">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Item list</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm"> 
+                        
+                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Rice
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Wheat
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Oil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pulses
+                              </label>
+                            </div>
+                            
+                            
+                            
+                                
+                            </div>
+                            <form>
+                              <input type = "text" placeholder="Enter your desired items here">
+                            </form> 
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="cm">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Item list</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm"> 
+                        
+                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Rice
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Wheat
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Oil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pulses
+                              </label>
+                            </div>
+                            
+                            
+                            
+                                
+                            </div>
+                            <form>
+                              <input type = "text" placeholder="Enter your desired items here">
+                            </form> 
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="cp">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Item list</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm"> 
+                        
+                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Rice
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Wheat
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Oil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pulses
+                              </label>
+                            </div>
+                            
+                            
+                            
+                                
+                            </div>
+                            <form>
+                              <input type = "text" placeholder="Enter your desired items here">
+                            </form> 
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="hb">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Item list</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm"> 
+                        
+                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Rice
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Wheat
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Oil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pulses
+                              </label>
+                            </div>
+                            
+                            
+                            
+                                
+                            </div>
+                            <form>
+                              <input type = "text" placeholder="Enter your desired items here">
+                            </form> 
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="r">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">                   
+                <div class="modal-header">
+                    <h3 class="modal-title">Item list</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm"> 
+                        
+                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Rice
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Wheat
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Oil
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                Pulses
+                              </label>
+                            </div>
+                            
+                            
+                            
+                                
+                            </div>
+                            <form>
+                              <input type = "text" placeholder="Enter your desired items here">
+                            </form> 
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="jumbotron">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Shop-it</h1>
+                    <p>Buy from your local stores at the best prices.</p>
+                </div> 
+        </div>
+    
+    </header>
+    
+    <div class="container">
+        <div class="row row-contnt">
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block ig"
+                                src="https://specials-images.forbesimg.com/imageserve/1183012322/960x0.jpg?fit=scale"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block ig"
+                                src="https://image.shutterstock.com/image-photo/young-male-technician-working-chemist-260nw-416282347.jpg"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block ig" src="https://miro.medium.com/max/1026/0*VHuvDhKiyb3oVANm"
+                                alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  <hr>
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Groceries</h5>
+              <img class="card-img-top" src="https://www.observerbd.com/2020/04/27/observerbd.com_1587995858.jpg" alt="Card image cap">
+              <p class="card-text">Buy groceries from shops open today at great discounts.</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target ="#Groceries">Buy Groceries</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Medical</h5>
+              <img class="card-img-top" src="https://cms.tribuneindia.com/gallary_content/2020/3/2020_3$largeimg_1445452695.JPG" alt="Card image cap">
+              <p class="card-text">Buy medicines at the best price.</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target ="#Medicines">Buy Medicines</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Miscellaneous</h5>
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Card image cap">
+              <p class="card-text">Use Shop-It to book barber appointments.</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target ="#Misc">List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+      <footer class="footer">
+        <div class="container"></div>
+          <div class="justify-content-center">
+                <div class="text-center">
+                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto ">
+                    <p>© Copyright 2020 Shop-It</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+      
+          
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
