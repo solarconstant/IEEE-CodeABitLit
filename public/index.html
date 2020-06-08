@@ -9,7 +9,7 @@
     <link rel = "stylesheet" href = "styles.css">
 </head> 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="#">Shop-it</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,18 +20,18 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">About</a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Groceries</a>
-                <a class="dropdown-item" href="#">Medicine</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target ="#Groceries">Groceries</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target ="#Medicines">Medicine</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Everything Else</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target ="#Misc">Everything Else</a>
               </div>
             </li>
           </ul>
@@ -86,7 +86,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">                   
                 <div class="modal-header">
-                    <h3 class="modal-title">Grocery Shops</h3>
+                    <h3 class="modal-title">Grocery Shops Open Today</h3>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
@@ -96,12 +96,14 @@
                         <img src="https://www.besthealthfoodshop.com/wp-content/uploads/2017/01/shopfront_1c.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#bhfs"><h5 class="card-title">Best Health and Food Shop</h5></button>
+                          <a role="button" class="btn btn-primary" href="tel:+81212345678"><i class="fa fa-phone"></i> Call</a>
                         </div>
                       </div>
                       <div class="card mb-3">
                         <img src="https://c8.alamy.com/comp/B3Y7GX/a-typical-english-village-shop-at-great-bedwyn-wiltshire-england-uk-B3Y7GX.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#ts"><h5 class="card-title">THE STORES</h5></button>
+                          <a role="button" class="btn btn-primary" href="tel:+82212345678"><i class="fa fa-phone"></i> Call</a>
                         </div>
                       </div>
                 </div>
@@ -112,7 +114,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">                   
                 <div class="modal-header">
-                    <h3 class="modal-title">Medicine Shops</h3>
+                    <h3 class="modal-title">Medicine Shops Open Today</h3>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
@@ -122,12 +124,15 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROwyZdpitTbIOJYwa8nsDC2auN0SBZsXGHTUEUg0PWaaU07B27&usqp=CAU" class="card-img-top" alt="...">
                         <div class="card-body">
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#cm"><h5 class="card-title">Chinese Medicine</h5></button>
+                          <a role="button" class="btn btn-primary" href="tel:+83212345678"><i class="fa fa-phone"></i> Call</a>
                         </div>
+                      </div>
                       </div>
                       <div class="card mb-3">
                         <img src="https://i.pinimg.com/originals/68/74/43/687443e224a055af22caffe464296d08.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#cp"><h5 class="card-title">city pharmacy</h5></button>
+                          <a role="button" class="btn btn-primary" href="tel:+84212345678"><i class="fa fa-phone"></i> Call</a>
                         </div>
                       </div>
                 </div>
@@ -138,7 +143,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">                   
                 <div class="modal-header">
-                    <h3 class="modal-title">Shops</h3>
+                    <h3 class="modal-title">Shops Open Today</h3>
                     <button type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
@@ -148,12 +153,14 @@
                         <img src="https://media.glassdoor.com/l/43/02/27/63/salon-front.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#hb"><h5 class="card-title">Hair Bar</h5></button>
+                          <a role="button" class="btn btn-primary" href="tel:+86212345678"><i class="fa fa-phone"></i> Call</a>
                         </div>
                       </div>
                       <div class="card mb-3">
                         <img src="https://pasqualepersonalbrief.files.wordpress.com/2014/12/reload_shop_front_nov_2013_small.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <button type="button" class="btn btn-info" data-toggle="modal" data-target ="#r"><h5 class="card-title">RELOAD</h5></button>
+                          <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
                         </div>
                       </div>
                 </div>
@@ -171,41 +178,25 @@
                 </div>
                 <div class="modal-body">
                     <form id="reservationForm"> 
-                        
+                    
                             <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Rice
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Wheat
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Oil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Pulses
-                              </label>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Rice  100/kg</li>
+                              <li class="list-group-item">Flour 100/kg</li>
+                              <li class="list-group-item">Oil 100/kg</li>
+                              <li class="list-group-item">Mask  4 for 20</li>
+                              <li class="list-group-item">Biscuits  50/Packet</li>  
+                            </ul> 
+                            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                              Items<br>
+                              <input type="text" name="name"><br>
+                              Address<br>
+                              <input type="text" name="mail"><br>
+                              <input type="submit" value="Send" class = "send">
+                              <input type="reset" value="Reset" class = "send">
+                              </form>    
                             </div>
                             
-                            
-                            
-                                
-                            </div>
-                            <form>
-                              <input type = "text" placeholder="Enter your desired items here">
-                            </form> 
-                            <button type="submit" class="btn btn-primary">Reserve</button>
                         </div>
                     </form>
                 </div>
@@ -222,42 +213,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="reservationForm"> 
-                        
-                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Rice
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Wheat
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Oil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Pulses
-                              </label>
-                            </div>
-                            
-                            
-                            
-                                
-                            </div>
+                    <form id="reservationForm">
                             <form>
                               <input type = "text" placeholder="Enter your desired items here">
                             </form> 
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                            <div class="form-group row">
+                              <label for="adress" class="col-md-2 col-form-label">Your Address</label>
+                              <div class="col-md-10">
+                                  <textarea class="form-control" id="address" name="address" rows="1"></textarea>
+                              </div>
+                          </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
                         </div>
                     </form>
                 </div>
@@ -276,40 +242,15 @@
                 <div class="modal-body">
                     <form id="reservationForm"> 
                         
-                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Rice
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Wheat
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Oil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Pulses
-                              </label>
-                            </div>
-                            
-                            
-                            
-                                
-                            </div>
-                            <form>
-                              <input type = "text" placeholder="Enter your desired items here">
-                            </form> 
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                            <label for="med" class=" col-sm-2 control-label">Upload Prescription</label>
+                            <input type = "file">
+                            <div class="form-group row">
+                              <label for="adress" class="col-md-2 col-form-label">Your Address</label>
+                              <div class="col-md-10">
+                                  <textarea class="form-control" id="address" name="address" rows="1"></textarea>
+                              </div>
+                          </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
                         </div>
                     </form>
                 </div>
@@ -318,57 +259,34 @@
         </div>
     </div>
     <div class="modal fade" role="dialog" id="cp">
-        <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-content">                   
-                <div class="modal-header">
-                    <h3 class="modal-title">Item list</h3>
-                    <button type="button" class="close" data-dismiss="modal">
-                        &times;
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form id="reservationForm"> 
-                        
-                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Rice
-                              </label>
+      <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content">                   
+              <div class="modal-header">
+                  <h3 class="modal-title">Item list</h3>
+                  <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form id="reservationForm"> 
+                      
+                          <label for="med" class=" col-sm-2 control-label">Upload Prescription</label>
+                          <input type = "file">
+                          <div class="form-group row">
+                            <label for="adress" class="col-md-2 col-form-label">Your Address</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="address" name="address" rows="1"></textarea>
                             </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Wheat
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Oil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Pulses
-                              </label>
-                            </div>
-                            
-                            
-                            
-                                
-                            </div>
-                            <form>
-                              <input type = "text" placeholder="Enter your desired items here">
-                            </form> 
-                            <button type="submit" class="btn btn-primary">Reserve</button>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                          <button type="submit" class="btn btn-primary">Place Order</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+   
     <div class="modal fade" role="dialog" id="hb">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">                   
@@ -379,46 +297,43 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="reservationForm"> 
-                        
-                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Rice
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Wheat
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Oil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Pulses
-                              </label>
-                            </div>
-                            
-                            
-                            
-                                
-                            </div>
-                            <form>
-                              <input type = "text" placeholder="Enter your desired items here">
-                            </form> 
-                            <button type="submit" class="btn btn-primary">Reserve</button>
-                        </div>
-                    </form>
+                  <form id="reservationForm">
+                
+                
                 </div>
-            </div>
+                <input class="form-control" type = "text" placeholder="Enter your name">  
+                <div class="row mt-3">
+                  <div class="col-12 col-sm-2">Date and Time</div>
+                  <div class="col-10">
+                    
+                    <div class="row">
+                      <div class="col-5 form-group">
+                        
+                        <input class="form-control" value="Date" placeholder="Date" type="text" onfocus="type='date'" name="rdate"
+                          id="rdate">
+                      </div>
+                      <div class="col-5 offset-0.5">
+                        <input class="form-control" value="Time" placeholder="Time" type="text" onfocus="type='time'" name="rtime"
+                          id="rtime">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-10 offset-2">
+                    <button type="button" class="btn btn-secondary btm-sm ml-auto hair" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary hair">Reserve</button>
+                  </div>
+                </div>
+                
+                
+                
+                </div>
+                
+                </div>
+                </form>
+                </div>
+                </div>
         </div>
     </div>
     <div class="modal fade" role="dialog" id="r">
@@ -433,40 +348,22 @@
                 <div class="modal-body">
                     <form id="reservationForm"> 
                         
-                            <label for="numberofguests" class=" col-sm-2 control-label">Select from below</label>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Rice
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Wheat
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Oil
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Pulses
-                              </label>
-                            </div>
-                            
-                            
-                            
-                                
-                            </div>
-                            <form>
-                              <input type = "text" placeholder="Enter your desired items here">
-                            </form> 
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                      <div class="row row-content">
+                        <div class="col-12">
+                          <h2>Opening Hours:10am to 3pm</h2>
+                          <br>
+                           <h3>Location Information</h3>
+                        </div>
+                         <div class="col-12 col-sm-4 offset-sm-1">
+                                <h5>Our Address</h5>
+                                 <address style="font-size: 100%">
+                               111, Dirty Water Road<br>
+                               Dirty Water Street, Kolton<br>
+                               China<br>
+                              
+                            </address>
+                         </div>
+                              
                         </div>
                     </form>
                 </div>
@@ -476,10 +373,13 @@
     <header class="jumbotron">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
-                    <h1>Shop-it</h1>
+                    <h1 id = "shopit">Shop-it</h1>
                     <p>Buy from your local stores at the best prices.</p>
                 </div> 
-        </div>
+                <div class="col-12 col-sm inline">
+                  <img src="https://m.media-amazon.com/images/G/31/amazonservices/landing/LocalShop-BannerImage._CB433270761_._SL1280_FMpng_.png" id = logo>
+                </div>
+            </div>
     
     </header>
     

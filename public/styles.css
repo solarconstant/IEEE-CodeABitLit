@@ -1,6 +1,6 @@
 body
 {
-    background-color: #f1e3cb;
+    background-color:#f23b61;
 }
 
 .row-header {
@@ -16,9 +16,8 @@ body
 .jumbotron {
     margin: 0px auto;
     padding: 70px 30px;
-    background: #9575CD;
     color: rgb(226, 215, 215);
-    background-color: #9575CD;
+    background-color: #5b3f92;
     font-size: 3rem;
 }
 
@@ -42,7 +41,7 @@ body {
 
 
 .footer {
-    background-color: #D1C4E9;
+    background-color: #ffbc56;
     margin: 0px auto;
     padding: 20px 0px; }
 #Login{
@@ -58,7 +57,72 @@ body {
 
 .container
 {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 80px;
-    background-color: #9575CD;
+    background-color: #ffbc56;
+}
+
+.send
+{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: blanchedalmond;
+}
+
+.send:hover
+{
+    background-color: salmon;
+}
+
+#cp
+{
+    text-align: center;
+}
+
+.hair
+{
+    margin-bottom: 10px;
+}
+
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    z-index: +2;
+    background-color: #ffbc56;
+}
+
+.card
+{
+    background-color: #5b3f92;
+    color: white;
+}
+
+#logo
+{
+    height: 200px;
+    width: 200px;
+    margin-right: 10%;
+    float: right;
+}
+
+#shopit
+{
+    font-size: 200%;
+}
+
+.navbar-brand 
+{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nav-link
+{
+    color: white;
+    font-size: 20px;
 }
